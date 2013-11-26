@@ -28,4 +28,17 @@ public class Viereck {
         return false;
     }
 
+    public boolean isParallelogram() {
+        if ((a.x != b.x) && (a.y == d.y) && (b.y == c.y) && (c.x != d.x)) {
+            int ab = Math.abs(a.y - b.y);
+            int bc = Math.abs(b.x - c.x);
+            int cd = Math.abs(c.y - d.y);
+            int da = Math.abs(d.x - a.x);
+            if (ab == cd && bc == da && ab != bc) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
