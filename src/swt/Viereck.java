@@ -36,6 +36,7 @@ public class Viereck {
         return false;
     }
 
+    
     public boolean isParallelogram() {
         if ((a.x != b.x) && (a.y == d.y) && (b.y == c.y) && (c.x != d.x)) {
             double ab = Math.abs(a.y - b.y);
