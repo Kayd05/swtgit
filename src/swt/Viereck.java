@@ -40,5 +40,12 @@ public class Viereck {
         }
         return false;
     }
+    
+    public boolean isViereck(){
+        if ((a.x == b.x) && (a.y == d.y) && (b.y == c.y) && (c.x > d.x)) {
+                return true;
+        }
+        return false;
+    }
 
 }
